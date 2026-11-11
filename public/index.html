@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matthew - fleet</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0e1116;color:#e6e9ef;font:15px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;padding:16px}
+h1{font-size:18px;margin:0 0 2px}.sub{color:#8b94a6;font-size:12px;margin-bottom:14px}
+.card{background:#161b22;border:1px solid #232a34;border-radius:12px;padding:12px;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #1e242d;font-size:14px}
+.row:last-child{border:0}.k{color:#8b94a6}.v{font-variant-numeric:tabular-nums}
+.big{font-size:22px;font-weight:600}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.w{background:#12171e;border:1px solid #222933;border-radius:9px;padding:9px}
+.wa{font-size:9px;color:#7d879a;word-break:break-all;margin:3px 0 5px;line-height:1.25}
+.pill{font-size:10px;padding:1px 6px;border-radius:99px;background:#1f6f43;color:#8ef0b8}
+.pill.bad{background:#6f2626;color:#f0a0a0}
+table{width:100%;border-collapse:collapse;font-size:12px}
+td,th{padding:5px 3px;text-align:right;border-bottom:1px solid #1e242d}
+th{color:#8b94a6;font-weight:500}td:first-child,th:first-child{text-align:left}
+.up{color:#8ef0b8}.dn{color:#f0a0a0}
+#s{color:#8b94a6;font-size:11px;margin-top:14px;text-align:center}
+a{color:#6ea8fe}
+</style></head><body>
+<h1>Matthew - iAI fleet</h1>
+<div class="sub">6 wallets - 1/10 scale trial</div>
+<div class="card"><div class="grid">
+<div><div class="k">traded</div><div class="big v" id="t">-</div></div>
+<div><div class="k">fees</div><div class="big v" id="f">-</div></div>
+<div><div class="k">trades</div><div class="big v" id="n">-</div></div>
+</div></div>
+<div class="card"><div class="row"><span class="k">updated</span><span class="v" id="u">-</span></div>
+<div class="row"><span class="k">planned trades</span><span class="v" id="p">-</span></div>
+<div class="row"><span class="k">failed</span><span class="v" id="x">-</span></div></div>
+<div class="card" id="wallets"></div>
+<div class="card"><div class="row"><span class="k">last trades</span><span class="v"></span></div>
+<table id="ev"></table></div>
+<div class="card" id="failbox" style="display:none"><div class="row"><span class="k">problems</span><span class="v" id="fnum"></span></div><div id="fl"></div></div>
+<div id="s">loading...</div>
+<script>
+async function poll(){
+ try{
+  const r=await fetch('state.json',{cache:'no-store'});
+  const s=await r.json();
+  document.getElementById('t').textContent=(s.totals.tradedG||0).toFixed(3)+' 0G';
+  document.getElementById('f').textContent=(s.totals.feesG||0).toFixed(4)+' 0G';
+  document.getElementById('n').textContent=(s.totals.done||0)+'/'+(s.totals.planned||0);
+  document.getElementById('u').textContent=new Date(s.updatedAt).toLocaleString();
+  document.getElementById('p').textContent=s.totals.planned||0;
+  document.getElementById('x').textContent=s.totals.failed||0;
+  document.getElementById('wallets').innerHTML=s.wallets.map(w=>
+   '<div class="w"><b>'+w.label+'</b> '+(w.stuck?'<span class="pill bad">stuck</span>':'<span class="pill">ok</span>')+
+   '<div class="wa">'+w.address.slice(0,10)+'...'+w.address.slice(-6)+'</div>'+
+   '<div class="v" style="font-size:12px">'+w.g.toFixed(3)+' 0G | '+w.iai.toFixed(6)+' iAI</div>'+
+   '<div style="font-size:11px;color:#7d879a">'+w.trades+' trades</div></div>').join('');
+  document.getElementById('ev').innerHTML='<tr><th>when</th><th>wallet</th><th>side</th><th>size</th></tr>'+
+   (s.events||[]).slice().reverse().map(e=>'<tr><td>'+new Date(e.t).toLocaleTimeString()+'</td><td>'+e.wallet+'</td><td>'+(e.side||'')+'</td><td>'+(e.sizeG||0).toFixed(3)+'</td></tr>').join('');
+  if((s.failures||[]).length){document.getElementById('failbox').style.display='';document.getElementById('fnum').textContent=s.failures.length;
+   document.getElementById('fl').innerHTML=s.failures.map(f=>'<div style="font-size:11px;color:#f0a0a0;margin-top:6px">'+f.wallet+' '+(f.stage||'')+': '+(f.error||'').slice(0,90)+'</div>').join('');}
+  document.getElementById('s').textContent='live';
+ }catch(e){document.getElementById('s').textContent='waiting for data';}
+}
+poll();setInterval(poll,20000);
+</script></body></html>
