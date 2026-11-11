@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T13:58:21.534Z",
+  "updatedAt": "2026-11-11T14:00:35.526Z",
   "wallets": [
     {
       "label": "f1",
@@ -60,9 +60,14 @@
     "tradedG": 0,
     "feesG": 0,
     "done": 0,
-    "failed": 0,
+    "failed": 1,
     "planned": 64
   },
   "events": [],
-  "failures": []
+  "failures": [
+    {
+      "t": "2026-11-11T13:59:49.809Z",
+      "error": "the wallet f5 holds 1.399259999997928 0G, not enough for 0.9861 plus the reserve"
+    }
+  ]
 }
