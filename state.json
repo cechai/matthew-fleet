@@ -1,0 +1,68 @@
+{
+  "updatedAt": "2026-11-11T05:30:07.033Z",
+  "wallets": [
+    {
+      "label": "f1",
+      "address": "0x3B0518951aa99efFE3554dA087fBd6657a30EB46",
+      "g": 1.991871,
+      "iai": 0,
+      "trades": 1,
+      "spentWei": "6789011250682222",
+      "stuck": false
+    },
+    {
+      "label": "f2",
+      "address": "0xf418B102b77cadcE2f3D9153077A2d3Da9527fF5",
+      "g": 1.89926,
+      "iai": 0,
+      "trades": 0,
+      "spentWei": "0",
+      "stuck": false
+    },
+    {
+      "label": "f3",
+      "address": "0x5576a66967668D6e36cC70b7D51c30938E99ffE3",
+      "g": 1.79926,
+      "iai": 0,
+      "trades": 0,
+      "spentWei": "0",
+      "stuck": false
+    },
+    {
+      "label": "f4",
+      "address": "0xc16E8bf179a8B1CcfD3D5beee2Ff7838BB4F6964",
+      "g": 1.59926,
+      "iai": 0,
+      "trades": 0,
+      "spentWei": "0",
+      "stuck": false
+    },
+    {
+      "label": "f5",
+      "address": "0x4BDd81d300BB6eA8849cE14d716743cb9B92E175",
+      "g": 1.39926,
+      "iai": 0,
+      "trades": 0,
+      "spentWei": "0",
+      "stuck": false
+    },
+    {
+      "label": "f6",
+      "address": "0xb47a924Ea2cCe5B6Ec7898A6eFA496FBdEEf42c3",
+      "g": 1.29926,
+      "iai": 0,
+      "trades": 0,
+      "spentWei": "0",
+      "stuck": false
+    }
+  ],
+  "totals": {
+    "tradedG": 0,
+    "feesG": 0,
+    "done": 0,
+    "failed": 0,
+    "planned": 64
+  },
+  "events": [],
+  "failures": []
+}
