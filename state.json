@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T03:26:43.222Z",
+  "updatedAt": "2026-11-13T03:28:49.973Z",
   "wallets": [
     {
       "label": "f1",
@@ -61,7 +61,7 @@
     "feesG": 0,
     "done": 2,
     "failed": 3,
-    "planned": 60
+    "planned": 6
   },
   "events": [
     {
