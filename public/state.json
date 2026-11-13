@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T00:11:59.124Z",
+  "updatedAt": "2026-11-13T00:14:06.111Z",
   "wallets": [
     {
       "label": "f1",
@@ -60,7 +60,7 @@
     "tradedG": 0.8969,
     "feesG": 0,
     "done": 1,
-    "failed": 1,
+    "failed": 3,
     "planned": 60
   },
   "events": [
@@ -76,6 +76,16 @@
     {
       "t": "2026-11-11T13:59:49.809Z",
       "error": "the wallet f5 holds 1.399259999997928 0G, not enough for 0.9861 plus the reserve"
+    },
+    {
+      "t": "2026-11-13T00:12:36.473Z",
+      "wallet": "f5",
+      "error": "this wallet does not have enough left after the trade and the reserve.",
+      "stage": "guard"
+    },
+    {
+      "t": "2026-11-13T00:12:36.474Z",
+      "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
     }
   ]
 }
