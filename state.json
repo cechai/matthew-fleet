@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T05:14:19.309Z",
+  "updatedAt": "2026-11-14T05:16:47.158Z",
   "wallets": [
     {
       "label": "f1",
       "address": "0x3B0518951aa99efFE3554dA087fBd6657a30EB46",
-      "g": 1.991871,
+      "g": 0,
       "iai": 0,
       "trades": 1,
       "spentWei": "6789011250682222",
@@ -13,7 +13,7 @@
     {
       "label": "f2",
       "address": "0xf418B102b77cadcE2f3D9153077A2d3Da9527fF5",
-      "g": 1.89926,
+      "g": 0,
       "iai": 0,
       "trades": 0,
       "spentWei": "0",
@@ -22,7 +22,7 @@
     {
       "label": "f3",
       "address": "0x5576a66967668D6e36cC70b7D51c30938E99ffE3",
-      "g": 1.764526,
+      "g": 0,
       "iai": 0,
       "trades": 4,
       "spentWei": "34733614517766427",
@@ -31,7 +31,7 @@
     {
       "label": "f4",
       "address": "0xc16E8bf179a8B1CcfD3D5beee2Ff7838BB4F6964",
-      "g": 1.59926,
+      "g": 0,
       "iai": 0,
       "trades": 0,
       "spentWei": "0",
@@ -40,8 +40,8 @@
     {
       "label": "f5",
       "address": "0x4BDd81d300BB6eA8849cE14d716743cb9B92E175",
-      "g": 0.50236,
-      "iai": 0.000369609,
+      "g": 0,
+      "iai": 0,
       "trades": 1,
       "spentWei": "896900000002240000",
       "stuck": false
@@ -49,7 +49,7 @@
     {
       "label": "f6",
       "address": "0xb47a924Ea2cCe5B6Ec7898A6eFA496FBdEEf42c3",
-      "g": 1.29926,
+      "g": 0,
       "iai": 0,
       "trades": 0,
       "spentWei": "0",
