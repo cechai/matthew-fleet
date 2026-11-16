@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T22:51:45.346Z",
+  "updatedAt": "2026-11-16T22:53:52.415Z",
   "wallets": [
     {
       "label": "f1",
@@ -40,10 +40,10 @@
     {
       "label": "f5",
       "address": "0x4BDd81d300BB6eA8849cE14d716743cb9B92E175",
-      "g": 1.364893,
-      "iai": 0,
-      "trades": 4,
-      "spentWei": "34367117959500368",
+      "g": 0.645293,
+      "iai": 0.00030593,
+      "trades": 5,
+      "spentWei": "753967117961740368",
       "stuck": false
     },
     {
@@ -57,9 +57,9 @@
     }
   ],
   "totals": {
-    "tradedG": 0.105921,
+    "tradedG": 0.825521,
     "feesG": 0,
-    "done": 16,
+    "done": 17,
     "failed": 14,
     "planned": 2970
   },
@@ -175,6 +175,13 @@
       "side": "sell",
       "sizeG": 1.1907,
       "spentWei": "-48495049034525318"
+    },
+    {
+      "t": "2026-11-16T22:52:13.776Z",
+      "wallet": "f5",
+      "side": "buy",
+      "sizeG": 0.7188,
+      "spentWei": "719600000002240000"
     }
   ],
   "failures": [
