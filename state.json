@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T23:08:42.195Z",
+  "updatedAt": "2026-11-16T23:10:49.388Z",
   "wallets": [
     {
       "label": "f1",
@@ -60,7 +60,7 @@
     "tradedG": 0.834031,
     "feesG": 0,
     "done": 19,
-    "failed": 19,
+    "failed": 20,
     "planned": 2970
   },
   "events": [
@@ -200,10 +200,6 @@
   ],
   "failures": [
     {
-      "t": "2026-11-16T22:37:11.613Z",
-      "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
-    },
-    {
       "t": "2026-11-16T22:41:39.766Z",
       "error": "the wallet f5 holds no iAI to sell. skipping."
     },
@@ -244,6 +240,10 @@
     {
       "t": "2026-11-16T23:08:41.568Z",
       "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
+    },
+    {
+      "t": "2026-11-16T23:10:09.745Z",
+      "error": "the wallet f4 holds no iAI to sell. skipping."
     }
   ]
 }
