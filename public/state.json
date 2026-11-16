@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T23:15:03.399Z",
+  "updatedAt": "2026-11-16T23:17:10.362Z",
   "wallets": [
     {
       "label": "f1",
@@ -60,7 +60,7 @@
     "tradedG": 0.121766,
     "feesG": 0,
     "done": 20,
-    "failed": 22,
+    "failed": 24,
     "planned": 2970
   },
   "events": [
@@ -207,14 +207,6 @@
   ],
   "failures": [
     {
-      "t": "2026-11-16T22:46:11.588Z",
-      "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
-    },
-    {
-      "t": "2026-11-16T22:49:09.759Z",
-      "error": "the wallet f5 holds no iAI to sell. skipping."
-    },
-    {
       "t": "2026-11-16T23:02:41.559Z",
       "wallet": "f4",
       "error": "this wallet does not have enough left after the trade and the reserve.",
@@ -250,6 +242,16 @@
     },
     {
       "t": "2026-11-16T23:13:11.564Z",
+      "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
+    },
+    {
+      "t": "2026-11-16T23:16:11.554Z",
+      "wallet": "f5",
+      "error": "this wallet does not have enough left after the trade and the reserve.",
+      "stage": "guard"
+    },
+    {
+      "t": "2026-11-16T23:16:11.556Z",
       "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
     }
   ]
