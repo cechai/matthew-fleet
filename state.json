@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T23:12:56.434Z",
+  "updatedAt": "2026-11-16T23:15:03.399Z",
   "wallets": [
     {
       "label": "f1",
@@ -40,10 +40,10 @@
     {
       "label": "f5",
       "address": "0x4BDd81d300BB6eA8849cE14d716743cb9B92E175",
-      "g": 0.645293,
-      "iai": 0.00030593,
-      "trades": 5,
-      "spentWei": "753967117961740368",
+      "g": 1.357558,
+      "iai": 0,
+      "trades": 6,
+      "spentWei": "41701717329695455",
       "stuck": false
     },
     {
@@ -57,10 +57,10 @@
     }
   ],
   "totals": {
-    "tradedG": 0.834031,
+    "tradedG": 0.121766,
     "feesG": 0,
-    "done": 19,
-    "failed": 20,
+    "done": 20,
+    "failed": 22,
     "planned": 2970
   },
   "events": [
@@ -196,19 +196,16 @@
       "side": "sell",
       "sizeG": 0.8626,
       "spentWei": "-858390235241069993"
+    },
+    {
+      "t": "2026-11-16T23:14:43.452Z",
+      "wallet": "f5",
+      "side": "sell",
+      "sizeG": 0.7159,
+      "spentWei": "-712265400632044913"
     }
   ],
   "failures": [
-    {
-      "t": "2026-11-16T22:41:39.766Z",
-      "error": "the wallet f5 holds no iAI to sell. skipping."
-    },
-    {
-      "t": "2026-11-16T22:46:11.586Z",
-      "wallet": "f5",
-      "error": "this wallet does not have enough left after the trade and the reserve.",
-      "stage": "guard"
-    },
     {
       "t": "2026-11-16T22:46:11.588Z",
       "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
@@ -244,6 +241,16 @@
     {
       "t": "2026-11-16T23:10:09.745Z",
       "error": "the wallet f4 holds no iAI to sell. skipping."
+    },
+    {
+      "t": "2026-11-16T23:13:11.562Z",
+      "wallet": "f4",
+      "error": "this wallet does not have enough left after the trade and the reserve.",
+      "stage": "guard"
+    },
+    {
+      "t": "2026-11-16T23:13:11.564Z",
+      "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
     }
   ]
 }
