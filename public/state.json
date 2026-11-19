@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T01:35:33.831Z",
+  "updatedAt": "2026-11-19T01:38:02.202Z",
   "wallets": [
     {
       "label": "f1",
@@ -13,7 +13,7 @@
     {
       "label": "f2",
       "address": "0xf418B102b77cadcE2f3D9153077A2d3Da9527fF5",
-      "g": 1.713368,
+      "g": 0,
       "iai": 0,
       "trades": 28,
       "spentWei": "185891974651103144",
@@ -22,8 +22,8 @@
     {
       "label": "f3",
       "address": "0x5576a66967668D6e36cC70b7D51c30938E99ffE3",
-      "g": 0.009882,
-      "iai": 0.000311326,
+      "g": 0,
+      "iai": 0,
       "trades": 209,
       "spentWei": "1789377646149082326",
       "stuck": false
@@ -31,7 +31,7 @@
     {
       "label": "f4",
       "address": "0xc16E8bf179a8B1CcfD3D5beee2Ff7838BB4F6964",
-      "g": 0.613751,
+      "g": 0,
       "iai": 0,
       "trades": 222,
       "spentWei": "985508769398474641",
@@ -40,7 +40,7 @@
     {
       "label": "f5",
       "address": "0x4BDd81d300BB6eA8849cE14d716743cb9B92E175",
-      "g": 0.203312,
+      "g": 0,
       "iai": 0,
       "trades": 368,
       "spentWei": "1195948350278587506",
@@ -49,7 +49,7 @@
     {
       "label": "f6",
       "address": "0xb47a924Ea2cCe5B6Ec7898A6eFA496FBdEEf42c3",
-      "g": 0.870919,
+      "g": 0,
       "iai": 0,
       "trades": 104,
       "spentWei": "428340500857628224",
@@ -60,7 +60,7 @@
     "tradedG": 4.623848,
     "feesG": 0,
     "done": 937,
-    "failed": 35,
+    "failed": 36,
     "planned": 3096
   },
   "events": [
@@ -347,12 +347,6 @@
   ],
   "failures": [
     {
-      "t": "2026-11-16T23:22:11.625Z",
-      "wallet": "f5",
-      "error": "this wallet does not have enough left after the trade and the reserve.",
-      "stage": "guard"
-    },
-    {
       "t": "2026-11-16T23:22:11.627Z",
       "error": "REFUSED by the safety layer: this wallet does not have enough left after the trade and the reserve."
     },
@@ -391,6 +385,10 @@
     {
       "t": "2026-11-16T23:50:40.008Z",
       "error": "the wallet f4 holds no iAI to sell. skipping."
+    },
+    {
+      "t": "2026-11-19T01:37:53.088Z",
+      "error": "HTTP request failed.\n\nURL: https://evmrpc.0g.ai/\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x70a082310000000000000000000000005576a66967668d6e36cc70b7d51c30938e99ffe3\",\"to\":\"0xc77FBd3824cc68e612b26114D176879aDdc29463\"},\"latest\"]}\n \nRaw Call Arguments:\n  to:    0xc77FBd3824cc68e612b26114D176879aDdc29463\n  data:  0x70a082310000000000000000000000005576a66967668d6e36cc70b7d51c30938e99ffe3\n \nContract Call:\n  address:   0xc77FBd3824cc68e612b26114D176879aDdc29463\n  function:  balanceOf(address)\n  args:               (0x5576a66967668D6e36cC70b7D51c30938E99ffE3)\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: fetch failed\nVersion: viem@2.57.16"
     }
   ]
 }
