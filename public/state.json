@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T10:24:41.961Z",
+  "updatedAt": "2026-11-20T10:26:59.330Z",
   "wallets": [
     {
       "label": "f1",
@@ -60,7 +60,7 @@
     "tradedG": 6.30685,
     "feesG": 0,
     "done": 1537,
-    "failed": 40,
+    "failed": 41,
     "planned": 3096
   },
   "events": [
@@ -347,10 +347,6 @@
   ],
   "failures": [
     {
-      "t": "2026-11-16T23:35:39.776Z",
-      "error": "the wallet f4 holds no iAI to sell. skipping."
-    },
-    {
       "t": "2026-11-16T23:38:41.547Z",
       "wallet": "f4",
       "error": "this wallet does not have enough left after the trade and the reserve.",
@@ -387,6 +383,10 @@
     {
       "t": "2026-11-20T10:23:23.134Z",
       "error": "HTTP request failed.\n\nStatus: 502\nURL: https://evmrpc.0g.ai/\nRequest body: {\"method\":\"eth_call\",\"params\":[{\"data\":\"0x70a08231000000000000000000000000c16e8bf179a8b1ccfd3d5beee2ff7838bb4f6964\",\"to\":\"0xc77FBd3824cc68e612b26114D176879aDdc29463\"},\"latest\"]}\n \nRaw Call Arguments:\n  to:    0xc77FBd3824cc68e612b26114D176879aDdc29463\n  data:  0x70a08231000000000000000000000000c16e8bf179a8b1ccfd3d5beee2ff7838bb4f6964\n \nContract Call:\n  address:   0xc77FBd3824cc68e612b26114D176879aDdc29463\n  function:  balanceOf(address)\n  args:               (0xc16E8bf179a8B1CcfD3D5beee2Ff7838BB4F6964)\n\nDocs: https://viem.sh/docs/contract/readContract\nDetails: \"backend unavailable\"\nVersion: viem@2.57.16"
+    },
+    {
+      "t": "2026-11-20T10:26:38.365Z",
+      "error": "HTTP request failed.\n\nStatus: 502\nURL: https://evmrpc.0g.ai/\nRequest body: {\"method\":\"eth_getBalance\",\"params\":[\"0xc16E8bf179a8B1CcfD3D5beee2Ff7838BB4F6964\",\"latest\"]}\n\nDetails: \"backend unavailable\"\nVersion: viem@2.57.16"
     }
   ]
 }
