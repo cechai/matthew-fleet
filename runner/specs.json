@@ -1,0 +1,74 @@
+[
+ {
+  "name": "f1",
+  "floatG": 2.2579,
+  "band": {
+   "name": "mid",
+   "lo": 1.016,
+   "hi": 1.355,
+   "fracLo": 0.55,
+   "fracHi": 0.95
+  },
+  "rate": 72.0
+ },
+ {
+  "name": "f2",
+  "floatG": 1.9585,
+  "band": {
+   "name": "mid",
+   "lo": 0.881,
+   "hi": 1.175,
+   "fracLo": 0.55,
+   "fracHi": 0.95
+  },
+  "rate": 72.0
+ },
+ {
+  "name": "f3",
+  "floatG": 1.8704,
+  "band": {
+   "name": "mid",
+   "lo": 0.842,
+   "hi": 1.122,
+   "fracLo": 0.55,
+   "fracHi": 0.95
+  },
+  "rate": 72.0
+ },
+ {
+  "name": "f4",
+  "floatG": 1.6682,
+  "band": {
+   "name": "mid",
+   "lo": 0.751,
+   "hi": 1.001,
+   "fracLo": 0.55,
+   "fracHi": 0.95
+  },
+  "rate": 72.0
+ },
+ {
+  "name": "f5",
+  "floatG": 1.4604,
+  "band": {
+   "name": "mid",
+   "lo": 0.657,
+   "hi": 0.876,
+   "fracLo": 0.55,
+   "fracHi": 0.95
+  },
+  "rate": 72.0
+ },
+ {
+  "name": "f6",
+  "floatG": 1.3598,
+  "band": {
+   "name": "mid",
+   "lo": 0.612,
+   "hi": 0.816,
+   "fracLo": 0.55,
+   "fracHi": 0.95
+  },
+  "rate": 72.0
+ }
+]
