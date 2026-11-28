@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T07:50:07.123Z",
+  "updatedAt": "2026-11-28T07:52:14.325Z",
   "wallets": [
     {
       "label": "f1",
@@ -13,8 +13,8 @@
     {
       "label": "f2",
       "address": "0xf418B102b77cadcE2f3D9153077A2d3Da9527fF5",
-      "g": 0.492027,
-      "iai": 0.000452519,
+      "g": 1.74792,
+      "iai": 0,
       "trades": 550,
       "spentWei": "1840162752965299655",
       "stuck": false
